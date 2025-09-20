@@ -37,7 +37,5 @@ Sono **Marco Cangiano**, uno sviluppatore web con la passione per creare esperie
 
 - 📞 +39 320 752 1348
 - 📧 c.marcosviluppoweb@gmail.com
-- 🔗 [Aggiungi qui i tuoi social]
-
-
+  
 *Grazie per il visitare il mio portfolio! Lascia una stella ⭐ se ti piace!*
