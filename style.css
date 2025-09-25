@@ -9,6 +9,12 @@
             --color-accent: #2c52ed;
             --color-card-bg: #161b22;
             --font-family-sans: 'Arial', sans-serif;
+
+							/* VARIABILI ELECTRIC BORDER - AGGIUNGI QUESTE */
+							--electric-border-color: #2c52ed;
+							--electric-light-color: #4a6cf7;
+							--gradient-color: rgba(44, 82, 237, 0.4);
+							--color-neutral-900: #0d1117;
         }
 
         * {
@@ -385,4 +391,125 @@
             .hero-content h1 {
                 font-size: 2.5rem;
             }
+        }
+ /* === MODIFICHE PER ELECTRIC BORDER SULLE CARD PROGETTI === */
+        /* === MODIFICHE PER ELECTRIC BORDER SULLE CARD PROGETTI === */
+
+    /* === CORREZIONE PER ELECTRIC BORDER - SOLO BORDI === */
+
+/* Filtro SVG nascosto */
+.svg-container {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+/* Container principale - SENZA filtro */
+.electric-card-container {
+    position: relative;
+    padding: 2px;
+    border-radius: 24px;
+    background: linear-gradient(-30deg, var(--gradient-color), transparent, var(--gradient-color));
+    /* RIMOSSO: filter: url(#turbulent-displace); */
+}
+
+/* Container per i bordi animati - QUI applico il filtro */
+.border-effects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    filter: url(#turbulent-displace);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Strato interno della card - PROTETTO dal filtro */
+.electric-card-inner {
+    position: relative;
+    background: var(--color-card-bg);
+    border-radius: 22px;
+    padding: 2rem;
+    height: 100%;
+    z-index: 2; /* Sopra i bordi */
+}
+
+/* Bordi animati */
+.electric-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    pointer-events: none;
+}
+
+.border-outer {
+    border: 2px solid rgba(44, 82, 237, 0.5);
+    padding-right: 4px;
+    padding-bottom: 4px;
+}
+
+.glow-layer-1 {
+    border: 2px solid rgba(44, 82, 237, 0.6);
+    filter: blur(1px);
+}
+
+.glow-layer-2 {
+    border: 2px solid var(--electric-light-color);
+    filter: blur(4px);
+}
+
+/* Card portfolio originale */
+.portfolio-item {
+    position: relative;
+    width: 350px;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important; /* Rimuove il padding originale */
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Contenuto protetto dal filtro */
+.portfolio-item img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+}
+
+.portfolio-item p {
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+}
+.btn_btn-secondary{
+               display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+            .btn_btn-secondary{
+            background-color: var(--color-accent);
+            color: var(--color-text-primary);
+            border: none;
+        }
+
+        .btn_btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(44, 82, 237, 0.4);
         }
