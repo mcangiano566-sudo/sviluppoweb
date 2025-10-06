@@ -13,38 +13,6 @@
 
 </head>
 <body>
-                       <!-- Filtro SVG per l'effetto bordo elettrico -->
-    <svg class="svg-container">
-        <defs>
-            <filter id="turbulent-displace" colorInterpolationFilters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
-                <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1" />
-                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
-                    <animate attributeName="dy" values="700; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
-                </feOffset>
-
-                <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1" />
-                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
-                    <animate attributeName="dy" values="0; -700" dur="6s" repeatCount="indefinite" calcMode="linear" />
-                </feOffset>
-
-                <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="2" />
-                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
-                    <animate attributeName="dx" values="490; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
-                </feOffset>
-
-                <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="2" />
-                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
-                    <animate attributeName="dx" values="0; -490" dur="6s" repeatCount="indefinite" calcMode="linear" />
-                </feOffset>
-
-                <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1" />
-                <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2" />
-                <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise" />
-
-                <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B" />
-            </filter>
-        </defs>
-    </svg>
 
 
 
@@ -53,38 +21,31 @@
 
 
 
-
-
-
-
-
-
-
-    <header class="header">
-                            <h1 class="primoh1">
-                                   <img id="logo" src="file/logo/immagine_circolare_ritagliata-Photoroom (1).png" > Sviluppo Web</h1>
-
-                                    <nav class="menu">
-
-
-								<ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#chi-sono">Chi Sono</a></li>
-                    <li><a href="#servizi">Servizi</a></li>
-                    <li><a href="#progetti">Progetti</a></li>
-                    <li><a href="#contatti">Contatti</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="header">
+    <h1 class="primoh1">
+        <img id="logo" src="file/logo/immagine_circolare_ritagliata-Photoroom (1).png" > Sviluppo Web
+    </h1>
+    <nav class="menu">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chi-sono">Chi Sono</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#progetti">Progetti</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
 
         <section id="home" class="hero" >
             <div class="container">
                 <div class="hero-content">
-                    <h1>Sviluppiamo il Tuo Futuro Digitale</h1>
-                    <p class="subtitle">Soluzioni Web su Misura per ogni Esigenza</p>
+
+									<h2 class="secondoh2">Sviluppiamo il Tuo Futuro Digitale</h2>
+
+
+										<p class="subtitle">Soluzioni Web su Misura per ogni Esigenza</p>
                     <div class="contact-card">
                         <p><i class="fas fa-phone"></i> +39 320 752 1348</p>
                         <p><i class="fas fa-envelope"></i> c.marcosviluppoweb@gmail.com</p>
@@ -94,98 +55,48 @@
             </div>
         </section>
 
-        <section id="chi-sono" class="about">
+
+
+
+
+				<section id="chi-sono" class="about">
             <div class="container">
                 <h2>Chi Sono</h2>
                 <div class="about-content">
-                    <img src="assets/tua-foto.jpg"  class="profile-pic">
+                    <img src="file/chi sono/io.jpg"  class="profile-pic">
                     <p>Sono Marco Cangiano, uno sviluppatore web con la passione per la creazione di esperienze digitali che non solo funzionano, ma emozionano. Credo fermamente che un sito web debba essere un perfetto connubio tra estetica, funzionalità e performance. Il mio approccio si basa sull'ascolto attento delle tue esigenze per tradurre la tua visione in un prodotto unico e su misura...</p>
                 </div>
             </div>
         </section>
 
-				  <section id="progetti" class="portfolio">
+								<section id="progetti" class="portfolio">
             <div class="container">
                 <h2>I miei lavori</h2>
                 <div class="portfolio-grid">
 
-                    <!-- Card Progetto 1 con SOLO BORDO ELETTRICO -->
-                      <div class="portfolio-item">
-            <div class="electric-card-container">
-											<!-- Container separato per i bordi con filtro -->
-											<div class="border-effects">
-													<div class="electric-border border-outer"></div>
-													<div class="electric-border glow-layer-1"></div>
-													<div class="electric-border glow-layer-2"></div>
-											</div>
+									<div class="portfolio-item">
+
+                        <h3>Laiso Ristrutturazioni</h3>
+															<p>Il sito vetrina si presenta con delle piccole card iniziali dei servizi con link di contatto diretto,
+															seccessivamente i lavori sempre con lo stesso concept delle card e scorrimanto delle foto con freccette,
+															tecnologie usate ( HTML, CSS, JavaScript).</p>
+												        <a href="https://www.laisoristrutturazioni.it/" class="btn btn-secondary">Guarda il sito</a>
+                 </div>
 
 
 
-												<!-- Contenuto PROTETTO dal filtro -->
-												<div class="electric-card-inner">
+										<div class="portfolio-item">
 
-														<h3>Laiso Ristrutturazioni</h3>
-														<p> Il sito vetrina rappresenta con delle piccole card inisziali i servizi con link di contatto diretto,seccessivamente i lavori sempre con lo stesso concept delle card e scorrimanto delle foto con freccette , tecnologie usate (es. HTML, CSS, JavaScript).</p>
-														<a href="https://www.laisoristrutturazioni.it/" target="_blank" class="btn_btn-secondary">Guarda il sito</a>
-												</div>
-										</div>
-								</div>
-                                       <!-- Card Progetto 2 con SOLO BORDO ELETTRICO -->
-                      <div class="portfolio-item">
-            <div class="electric-card-container">
-											<!-- Container separato per i bordi con filtro -->
-											<div class="border-effects">
-													<div class="electric-border border-outer"></div>
-													<div class="electric-border glow-layer-1"></div>
-													<div class="electric-border glow-layer-2"></div>
-											</div>
-
-
-
-												<!-- Contenuto PROTETTO dal filtro -->
-												<div class="electric-card-inner">
-														<img src="assets/progetto1.jpg" alt="Progetto 1">
-														<h3>In Lavorazione</h3>
-														<p>Descrizione del progetto, tecnologie usate (es. HTML, CSS, JavaScript).</p>
-														<a href="#" class="btn_btn-secondary">Guarda il sito</a>
-												</div>
-										</div>
-								</div>
-
-
-
-
-
-
-
-
-
-
+                        <h3>In Lavorazione</h3>
+                        <p> Sito web di e-commerce personalizzabile dal cliente linguaggi utilizzati(HTML, CSS, JavaScript,PHP, MYSQL).</p>
+                        <a href="#" class="btn btn-secondary">Guarda il sito</a>
+                    </div>
                 </div>
             </div>
+
+
+
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -220,20 +131,69 @@
 
 
         <section id="contatti" class="contact">
-            <div class="container">
-                <h2>Contattami</h2>
-                <form action="submit_form.php" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Nome" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" rows="5" placeholder="Il tuo messaggio..." required></textarea>
-                    <button type="submit" class="btn btn-primary">Invia</button>
-                </form>
+    <div class="container">
+        <h2>Contattami</h2>
+        <form action="https://formspree.io/f/mkgqzpdk" method="POST" class="contact-form" id="contactForm">
+            <!-- Campo Nome -->
+            <div class="form-group">
+                <label for="name">Nome e Cognome *</label>
+                <input type="text" id="name" name="name" placeholder="Il tuo nome completo" required minlength="2">
             </div>
-        </section>
+
+            <!-- Campo Email -->
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="la.tua.email@esempio.com" required>
+            </div>
+
+            <!-- Campo Telefono (opzionale) -->
+            <div class="form-group">
+                <label for="phone">Telefono (opzionale)</label>
+                <input type="tel" id="phone" name="phone" placeholder="+39 123 456 7890">
+            </div>
+
+            <!-- Selezione Servizio (opzionale) -->
+            <div class="form-group">
+                <label for="service">Tipo di Servizio Richiesto (opzionale)</label>
+                <select id="service" name="service" class="service-select">
+                    <option value="">Seleziona un servizio</option>
+                    <option value="sito-vetrina">Sito Vetrina</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="sviluppo-personalizzato">Sviluppo Personalizzato</option>
+                    <option value="consulenza">Consulenza</option>
+                    <option value="altro">Altro</option>
+                </select>
+            </div>
+
+            <!-- Campo Messaggio -->
+            <div class="form-group">
+                <label for="message">Messaggio *</label>
+                <textarea id="message" name="message" rows="6" placeholder="Raccontami il tuo progetto, budget e tempistiche..." required minlength="10"></textarea>
+            </div>
+
+            <!-- Campo hidden per redirect -->
+            <input type="hidden" name="_next" value="https://tuosito.com/grazie">
+            <input type="hidden" name="_subject" value="Nuovo messaggio dal sito web">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+                <span id="btnText">Invia Messaggio</span>
+            </button>
+
+            <div class="form-message" id="formMessage"></div>
+        </form>
+    </div>
+</section>
 
     </main>
 
-    <footer class="footer">
+
+
+
+
+
+
+		<footer class="footer">
         <div class="container">
             <p>&copy; 2024 Marco Cangiano. Tutti i diritti riservati.</p>
             <div class="social-links">
@@ -243,6 +203,40 @@
         </div>
     </footer>
 
+    <!--script del form-->
+				<script>
+							// Gestione del form per Formspree
+							document.addEventListener('DOMContentLoaded', function() {
+									const contactForm = document.getElementById('contactForm');
+									const submitBtn = document.getElementById('submitBtn');
+									const btnText = document.getElementById('btnText');
+									const formMessage = document.getElementById('formMessage');
+
+									if (contactForm) {
+											contactForm.addEventListener('submit', function(e) {
+													// Mostra stato di caricamento
+													submitBtn.classList.add('loading');
+													btnText.textContent = 'Invio in corso...';
+													submitBtn.disabled = true;
+
+													// Formspree gestirà l'invio, qui mostriamo solo il feedback visivo
+													setTimeout(function() {
+															// Il redirect sarà gestito da Formspree con il campo _next
+													}, 1000);
+											});
+
+											// Validazione in tempo reale
+											const inputs = contactForm.querySelectorAll('input, textarea');
+											inputs.forEach(input => {
+													input.addEventListener('input', function() {
+															if (this.value.trim() !== '') {
+																	this.style.borderColor = this.checkValidity() ? '#22c55e' : '#ef4444';
+															}
+													});
+											});
+									}
+							});
+</script>
 
 
 
@@ -251,49 +245,92 @@
 
 
 
-  <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const navLinks = document.querySelectorAll('.nav-links a');
-            const sections = document.querySelectorAll('section[id]');
 
-            const setActiveLink = () => {
-                const scrollY = window.pageYOffset;
-                sections.forEach(current => {
-                    const sectionHeight = current.offsetHeight;
-                    const sectionTop = current.offsetTop - 50;
-                    const sectionId = current.getAttribute('id');
 
-                    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                        navLinks.forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href').includes(sectionId)) {
-                                link.classList.add('active');
-                            }
-                        });
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // ===== NAVIGATION ACTIVE LINK =====
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('section[id]');
+
+    const setActiveLink = () => {
+        const scrollY = window.pageYOffset;
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 50;
+            const sectionId = current.getAttribute('id');
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(sectionId)) {
+                        link.classList.add('active');
                     }
                 });
-            };
-
-            window.addEventListener('scroll', setActiveLink);
-            setActiveLink();
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.2
-            });
-
-            const animatedSections = document.querySelectorAll('.about, .services, .portfolio, .contact');
-            animatedSections.forEach(section => {
-                observer.observe(section);
-            });
+            }
         });
-    </script>
+    };
+
+    // Throttle dello scroll per performance
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        if (!scrollTimeout) {
+            scrollTimeout = setTimeout(() => {
+                setActiveLink();
+                scrollTimeout = null;
+            }, 10);
+        }
+    });
+    setActiveLink();
+
+    // ===== OBSERVER PERFORMANTI =====
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const portfolioObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                portfolioObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const servicesObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-left');
+                servicesObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                sectionObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // ===== APPLICA OBSERVER =====
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const serviceItems = document.querySelectorAll('.service-item');
+    const animatedSections = document.querySelectorAll('.about, .services, .portfolio, .contact');
+
+    portfolioItems.forEach(item => portfolioObserver.observe(item));
+    serviceItems.forEach(item => servicesObserver.observe(item));
+    animatedSections.forEach(section => sectionObserver.observe(section));
+});
+</script>
 
 </body>
 </html>
